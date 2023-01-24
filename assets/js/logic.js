@@ -116,11 +116,7 @@ function quizEnd() {
 
 }
 
-function checkForEnter(event) {
-    if (event.key === "Enter") {
-        saveHighScore();
-    }
-}
+
 
 function saveHighScore() {
     let initials = initialElement.value.trim();
@@ -140,6 +136,11 @@ function saveHighScore() {
 
 }
 
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighScore();
+    }
+}
 
 
 startButton.addEventListener("click", startQuiz);
